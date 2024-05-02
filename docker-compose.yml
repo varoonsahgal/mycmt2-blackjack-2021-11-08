@@ -6,7 +6,7 @@ services:
     ports:
     - "8089:80"
   mysqldb:
-    image: “db:2.0"
+    image: “db:3.0"
     restart: always
     ports:
     - “3306:3306"
