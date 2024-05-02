@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  wordpressapp:
+    image: “wordpress:2.0"
+    restart: always
+    ports:
+    - "8089:80"
+  mysqldb:
+    image: “db:2.0"
+    restart: always
+    ports:
+    - “3306:3306"
+    environment:
+    - MY_ENV=my_value
